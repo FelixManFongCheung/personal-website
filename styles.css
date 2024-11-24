@@ -1,19 +1,73 @@
 * {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-li:hover {
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
     font-style: italic;
 }
 
+.container {
+    display: block;
+    height: 100vh;
+}
+
 .links {
+    height: 100%;
+    margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
     gap: 13.33vh;
-    font-size: 30vh;
+    font-size: 15vh;
     font-weight: 900;
     padding: 13.33vh 0;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+}   
+
+.content {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.content.show {
+    padding: 13.33vh 5vh;
 }
