@@ -111,6 +111,7 @@ a:hover {
         opacity: 1;
         height: 30%;
         width: 100%;
+        bottom: 0;
         font-size: min(20vw, 30vh);
         align-items: center;
         justify-content: center;
