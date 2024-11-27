@@ -8,11 +8,11 @@
 </head>
 <body>
     <button onclick="window.location.href='../index.html'">Back</button>
-    <section>
+    <section class="project-container">
         <h1>Projects</h1>
         <div class="btn-group">
-            <button onclick="showRyanPortfolio()">[A portfolio website for Ryan]</button>
-            <button onclick="showItaliaArt()">[An art project for Italia]</button>
+            <button data-project="ryanPortfolio">[A portfolio website for Ryan]</button>
+            <button data-project="italiaArt">[An art project for Italia]</button>
         </div>
         <div class="content" id="ryanPortfolio">
             <p>
@@ -30,7 +30,8 @@
             </p>
             <a href="https://hcguirmehicogmhi45wuct98m4xf9cjhu8fhxmio.onrender.com" target="_blank" rel="noopener noreferrer">link</a>
         </div>
+        <div class="mask"></div>
     </section>
-    <script type="text/javascript" src="/projects/index.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
 </body>
 </html>
